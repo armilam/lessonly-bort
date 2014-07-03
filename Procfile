@@ -1,1 +1,1 @@
-web: bin/hubot -n Bort
+web: bin/hubot -a rest -n Bort

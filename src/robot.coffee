@@ -13,6 +13,7 @@ Response = require './response'
 HUBOT_DEFAULT_ADAPTERS = [
   'campfire'
   'shell'
+  'rest'
 ]
 
 HUBOT_DOCUMENTATION_SECTIONS = [
@@ -190,6 +191,7 @@ class Robot
   #
   # Returns nothing.
   receive: (message) ->
+    console.log "adapter - receive"
     results = []
     for listener in @listeners
       try
